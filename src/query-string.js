@@ -51,7 +51,7 @@ function parseParameter( param )
 
   const { key, value, index } = splitParameter( param );
 
-  if ( index !== void 0 ) {
+  if ( index !== null ) {
 
     if ( ! parameters[ key ] ) {
       parameters[ key ] = index === '' || /\d+/.test( index ) ? [] : {};
